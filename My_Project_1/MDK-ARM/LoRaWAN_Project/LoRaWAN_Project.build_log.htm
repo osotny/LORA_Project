@@ -1,0 +1,202 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 112124 wuguo, 1241242, LIC=QF82M-XUTIY-56ZQ2-9PQYB-EJBCR-K76X4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+C:\Users\wuguo\Desktop\LORA\LoRaWAN_Project\MDK-ARM\LoRaWAN_Project.uvprojx
+Project File Date:  09/22/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'LoRaWAN_Project'
+assembling startup_stm32l476xx.s...
+compiling gpio.c...
+compiling i2c.c...
+compiling rtc.c...
+compiling dma.c...
+compiling main.c...
+compiling tim.c...
+../Core/Src/usart.c(632): warning: implicitly declaring library function 'vsnprintf' with type 'int (char *, unsigned int, const char *, __builtin_va_list)' [-Wimplicit-function-declaration]
+    vsnprintf((char *)buf, sizeof(buf), fmt, va_args);
+    ^
+../Core/Src/usart.c(632): note: include the header <stdio.h> or explicitly provide a declaration for 'vsnprintf'
+1 warning generated.
+compiling usart.c...
+compiling stm32l4xx_hal_msp.c...
+compiling stm32l4xx_it.c...
+compiling stm32l4xx_hal_i2c_ex.c...
+compiling stm32l4xx_hal.c...
+compiling stm32l4xx_hal_rcc.c...
+compiling stm32l4xx_hal_rcc_ex.c...
+compiling stm32l4xx_hal_flash.c...
+compiling stm32l4xx_hal_flash_ramfunc.c...
+compiling stm32l4xx_hal_gpio.c...
+compiling stm32l4xx_hal_dma_ex.c...
+compiling stm32l4xx_hal_flash_ex.c...
+compiling stm32l4xx_hal_dma.c...
+compiling stm32l4xx_hal_i2c.c...
+compiling stm32l4xx_hal_pwr.c...
+compiling stm32l4xx_hal_cortex.c...
+compiling stm32l4xx_hal_pwr_ex.c...
+compiling stm32l4xx_hal_exti.c...
+compiling stm32l4xx_hal_uart_ex.c...
+compiling stm32l4xx_hal_rtc.c...
+compiling system_stm32l4xx.c...
+compiling stm32l4xx_hal_rtc_ex.c...
+compiling stm32l4xx_hal_uart.c...
+compiling app.c...
+compiling key.c...
+compiling stm32l4xx_hal_tim_ex.c...
+../board/sensors_test.c(31): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<CE><C2>ʪ<B6>ȴ<AB><B8><D0><C6><F7><D5><FD><B3><A3> <CE>¶<C8>: %.3f <A1><E6>   ʪ<B6><C8>: %.3f%% \r\n",(double)temper/1000.0,(double)humi/1000.0);
+                          ^~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~       ~~~~~~~~    ~~~~~~~~
+../board/sensors_test.c(35): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<CE><C2>ʪ<B6>ȴ<AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                          ^~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(39): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        debug_printf("<CE><C2>ʪ<B6>ȴ<AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                      ^~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(58): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<D5>նȴ<AB><B8><D0><C6><F7><D5><FD><B3><A3> <D5>ն<C8>: %.2f Lux \r\n",lux);
+                          ^~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~
+../board/sensors_test.c(62): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<D5>նȴ<AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                          ^~~~  ~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(66): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        debug_printf("<D5>նȴ<AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                      ^~~~  ~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(83): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<C6><F8>ѹ<B4><AB><B8><D0><C6><F7><D5><FD><B3><A3> <C6><F8>ѹ: %.2f Pa \r\n",pressure);
+                          ^~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+../board/sensors_test.c(87): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<C6><F8>ѹ<B4><AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                          ^~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(91): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        debug_printf("<C6><F8>ѹ<B4><AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                      ^~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(112): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<BC><D3><CB>ٶȴ<AB><B8><D0><C6><F7><D5><FD><B3><A3> X: %d  Y: %d  Z: %d  \r\n",tAccel.accel_x,tAccel.accel_y,tAccel.accel_z);
+                          ^~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(116): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            debug_printf("<BC><D3><CB>ٶȴ<AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                          ^~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~
+../board/sensors_test.c(120): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        debug_printf("<BC><D3><CB>ٶȴ<AB><B8><D0><C6><F7><D2>쳣  error:d% \r\n",Error_num);
+                      ^~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~
+12 warnings generated.
+compiling sensors_test.c...
+../board/lorawan_node_driver.c(438): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                DEBUG_PRINTF ("Error<A3><BA>Dynamic application for memory failure -- p1->down_info.business_data\r\n");
+                                    ^~~~~~~~
+../board/lorawan_node_driver.c(473): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            DEBUG_PRINTF ("Error<A3><BA>Dynamic application for memory failure -- p1\r\n");
+                                ^~~~~~~~
+2 warnings generated.
+compiling lorawan_node_driver.c...
+compiling hdc1000.c...
+compiling mpl3115.c...
+compiling mma8451.c...
+compiling stm32l4xx_hal_tim.c...
+compiling max7q.c...
+compiling MX25L128.c...
+compiling opt3001.c...
+compiling common.c...
+../board/lcd/ST7789v.c(823): warning: passing 'char [22]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                          LCD_ShowString(30,120,"Start Programming Now",BLUE);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~
+../board/lcd/ST7789v.c(735): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color)
+                                                         ^
+1 warning generated.
+compiling ST7789v.c...
+../board/lcd/XPT2046.c(206): warning: passing 'char [23]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    LCD_ShowString(35,110,"Please touch the dots,",BLUE);//У<D5><FD><CD><EA><B3><C9>
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/board/lcd\ST7789v.h(111): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color);
+                                                         ^
+../board/lcd/XPT2046.c(207): warning: passing 'char [27]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    LCD_ShowString(20,140,"carries on the correction!",BLUE);//У<D5><FD><CD><EA><B3><C9>
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/board/lcd\ST7789v.h(111): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color);
+                                                         ^
+../board/lcd/XPT2046.c(243): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+                tem1=abs(pos_temp[0][0]-pos_temp[1][0]);//x1-x2
+                     ^
+../board/lcd/XPT2046.c(243): note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+../board/lcd/XPT2046.c(261): warning: passing 'char [26]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                    LCD_ShowString(20,110,"Touch Screen Adjust Again",BLUE);//У<D5><FD><CD><EA><B3><C9>
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/board/lcd\ST7789v.h(111): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color);
+                                                         ^
+../board/lcd/XPT2046.c(281): warning: passing 'char [26]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                    LCD_ShowString(20,110,"Touch Screen Adjust Again",BLUE);//У<D5><FD><CD><EA><B3><C9>
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/board/lcd\ST7789v.h(111): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color);
+                                                         ^
+../board/lcd/XPT2046.c(300): warning: passing 'char [26]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                    LCD_ShowString(20,110,"Touch Screen Adjust Again",BLUE);//У<D5><FD><CD><EA><B3><C9>
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/board/lcd\ST7789v.h(111): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color);
+                                                         ^
+../board/lcd/XPT2046.c(315): warning: passing 'char [24]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(35,110,"Touch Screen Adjust OK!",BLUE);//У<D5><FD><CD><EA><B3><C9>
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/board/lcd\ST7789v.h(111): note: passing argument to parameter 'p' here
+void LCD_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t color);
+                                                         ^
+7 warnings generated.
+compiling XPT2046.c...
+linking...
+Program Size: Code=26152 RO-data=1472 RW-data=28 ZI-data=5108  
+FromELF: creating hex file...
+"LoRaWAN_Project\LoRaWAN_Project.axf" - 0 Error(s), 23 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.2.pack
+                Keil.STM32L4xx_DFP.2.6.2
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_LoRaWAN_Project
+  C:\Users\wuguo\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\wuguo\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.6.2\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
